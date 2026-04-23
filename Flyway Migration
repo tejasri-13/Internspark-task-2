@@ -1,0 +1,9 @@
+CREATE TABLE employee (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100)
+);
+
+INSERT INTO employee (name, email) VALUES
+('Nandu', 'teju@email.com'),
+('Alex', 'harika@email.com');

@@ -1,0 +1,31 @@
+✅ Flyway Migration Log (Startup)
+Flyway Community Edition
+Successfully validated 1 migration
+Migrating schema "demo_db" to version "1 - init"
+Successfully applied 1 migration
+
+
+✅ Database Table (After Migration)
+SELECT * FROM employee;
++----+---------------+------------------------+
+| id | name          | email                  |
++----+---------------+------------------------+
+| 1  | Nandu         | teju@email.com         |
+| 2  | Alex          | harika@email.com       |
++----+---------------+------------------------+
+
+
+✅ Insert Query Output
+INSERT INTO employee (name, email)
+VALUES ('Rahul', 'rahul@email.com');
+Query OK, 1 row affected
+
+
+✅ Select Query After Insert
++----+---------------+----------------------+
+| id | name          | email                |
++----+---------------+----------------------+
+| 1  | Nandu         | nandu@email.com      |
+| 2  | Alex          | alex@email.com       |
+| 3  | Rahul         | rahul@email.com      |
++----+---------------+----------------------+
